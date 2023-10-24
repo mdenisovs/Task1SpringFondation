@@ -1,0 +1,10 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    health:
+      group:
+        health-group:
+          include: "ping,diskSpace"
+      show-details: "ALWAYS"
